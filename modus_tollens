@@ -1,0 +1,9 @@
+Premisa 1: Si el reloj suena, es hora de levantarse.
+Premisa 2: No es hora de levantarse.
+
+Conclusión: El reloj no suena.
+
+Aplicando Modus Tollens:
+Si el reloj suena (A), entonces es hora de levantarse (B).
+No es hora de levantarse (B).
+Por lo tanto, el reloj no suena (A).
