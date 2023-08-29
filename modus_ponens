@@ -1,0 +1,9 @@
+Premisa 1: Si llueve, la calle estará mojada.
+Premisa 2: Está lloviendo.
+
+Conclusión: La calle está mojada.
+
+Aplicando Modus Ponens:
+Si llueve (A), entonces la calle estará mojada (B).
+Está lloviendo (A).
+Por lo tanto, la calle está mojada (B).
