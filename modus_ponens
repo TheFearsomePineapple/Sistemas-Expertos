@@ -1,9 +1,15 @@
-Premisa 1: Si llueve, la calle estará mojada.
-Premisa 2: Está lloviendo.
+public class AlarmaDeTemperatura {
 
-Conclusión: La calle está mojada.
+    public static void main(String[] args) {
+        int temperaturaActual = 32; // Supongamos que la temperatura actual es de 32 grados Celsius.
 
-Aplicando Modus Ponens:
-Si llueve (A), entonces la calle estará mojada (B).
-Está lloviendo (A).
-Por lo tanto, la calle está mojada (B).
+        if (temperaturaActual >= 30) {
+            activarAlarma();
+        }
+    }
+
+    public static void activarAlarma() {
+        System.out.println("La alarma de temperatura se ha activado debido a una temperatura alta.");
+        // Aquí puedes agregar código para activar la alarma real, como enviar notificaciones, sonar una sirena, etc.
+    }
+}
