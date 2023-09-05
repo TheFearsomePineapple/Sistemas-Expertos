@@ -1,9 +1,25 @@
-Premisa 1: Si el reloj suena, es hora de levantarse.
-Premisa 2: No es hora de levantarse.
+import java.util.Scanner;
 
-Conclusión: El reloj no suena.
+public class ModusTollensExample {
 
-Aplicando Modus Tollens:
-Si el reloj suena (A), entonces es hora de levantarse (B).
-No es hora de levantarse (B).
-Por lo tanto, el reloj no suena (A).
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("¿Cuántos años tienes? ");
+        int edad = scanner.nextInt();
+        
+        System.out.print("¿Has aprobado el examen teórico? (true/false): ");
+        boolean aproboExamenTeorico = scanner.nextBoolean();
+
+        // Aplicamos el modus tollens
+        if (!aproboExamenTeorico) {
+            System.out.println("Lo siento, no puedes obtener una licencia de conducir porque no has aprobado el examen teórico.");
+        } else if (edad < 18) {
+            System.out.println("Lo siento, no puedes obtener una licencia de conducir porque eres menor de 18 años.");
+        } else {
+            System.out.println("¡Felicidades! Cumpliste con los requisitos y puedes obtener una licencia de conducir.");
+        }
+
+        scanner.close();
+    }
+}
